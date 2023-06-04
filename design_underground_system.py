@@ -29,56 +29,30 @@
 class UndergroundSystem:
 
     def __init__(self):
-        self.start_stations = {}
-        self.end_stations = {}
-
-    def checkIn(self, id: int, stationName: str, t: int) -> None:
-        self.checkin_id = id
         # self.start_stations = {}
-        self.init_time = t
-
-        if stationName not in self.start_stations:
-            self.start_stations[stationName] = []
-            self.start_stations[stationName].append(self.init_time)
-        else:
-            self.start_stations[stationName].append(self.init_time)
-
-        print(f"start stations: {self.start_stations}")
-        
-
-    def checkOut(self, id: int, stationName: str, t: int) -> None:
-        self.checkout_id = id
         # self.end_stations = {}
-        self.end_time = t
+        self.checkin_info = {}
+        self.travel_time = {}
 
-        if not stationName in self.end_stations:
-            self.end_stations[stationName] = []
-            self.end_stations[stationName].append(self.end_time)
+    def checkIn(self, id: int, stationName: str, startTime: int) -> None:
+        self.checkin_info[id] = (stationName, startTime)
+
+    def checkOut(self, id: int, stationName: str, endTime: int) -> None:
+        start_station, start_time = self.checkin_info[id]
+        key = (start_station, stationName)
+        journey_time = endTime - start_time
+        if key not in self.travel_time:
+            self.travel_time[key] = []
+            self.travel_time[key].append(journey_time)
         else:
-            self.end_stations[stationName].append(self.end_time)
-        print(f"end stations: {self.end_stations}")
-
-        # if self.checkin_id == self.checkout_id:
-        #     self.travel_time = self.end_time - self.init_time
-        
+            self.travel_time[key].append(journey_time)  
 
     def getAverageTime(self, startStation: str, endStation: str) -> float:
-        print(f"start station Name {self.start_stations}. end stattions {self.end_stations}")
-        sum = 0
-        if len(self.start_stations[startStation]) == len(self.end_stations[endStation]):
-            for i in range(len(self.start_stations[startStation])):
-                sum += (self.end_stations[endStation][i] - self.start_stations[startStation][i])
-            avg = (sum / len(self.start_stations[startStation]))
-        elif len(self.start_stations[startStation]) < len(self.end_stations[endStation]):
-            for i in range(len(self.start_stations[startStation])):
-                sum += (self.end_stations[endStation][i] - self.start_stations[startStation][i])
-            avg = (sum / len(self.start_stations[startStation]))
-        else:
-            for i in range(len(self.end_stations[endStation])):
-                sum += (self.end_stations[endStation][i] - self.start_stations[startStation][i])
-            avg = (sum / len(self.end_stations[endStation]))
-
-        return avg
+        key = (startStation, endStation)
+        total_time = sum(self.travel_time[key])
+        avg_time = total_time / len(self.travel_time[key])
+    
+        return avg_time
 
 
 # undergroundSystem = UndergroundSystem()

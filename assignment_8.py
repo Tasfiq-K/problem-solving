@@ -1,11 +1,9 @@
 from collections import Counter
 
 class Solution:
-
     """
     A solution class
     """
-
     def SingleElement(self, nums: list) -> int:
         """
         Finds that one element who is single. :p
@@ -23,7 +21,6 @@ class Solution:
             if value == 1:
                 return key
         return None
-
 
 sol = Solution()
 res = sol.SingleElement([3, 3, 1, 1, 1, 4, 4, 5])

@@ -15,7 +15,7 @@ class Solution:
                 stack.append(node.left)
 
             if node.right:
-                stack.appedn(node.right)
+                stack.append(node.right)
             
             max_freq = max(counter.values())
             result = []

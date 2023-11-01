@@ -1,8 +1,8 @@
 ## The Problem
-In simple terms, the problem is that, you will provided a Binary Search Tree, where you will need to find the mode(s). A mode is a value that has the maximum frequency. There could be multiple modes, which means multiple items can be occured maximum frequency of time.
+In simple terms, the problem is that, you will be provided a Binary Search Tree, where you will need to find the mode(s). A mode is a value that has the maximum frequency. There could be multiple modes, which means multiple items can be occured maximum frequency of time.
 
 ## The Approach
-There are a lot of approaches for solving this problem. You can checkout the [Editorial](https://leetcode.com/problems/find-mode-in-binary-search-tree/editorial/?envType=daily-question&envId=2023-11-01) section for this problem, which is a very usefule resource. Also you might want to learn terms like `BFS`, `DFS`, `Stack`, `Queue`, `LIFO`, `FIFO` etc. Also don't forget to checkout what's a Binary Tree is.
+There are a lot of approaches for solving this problem. You can checkout the [Editorial](https://leetcode.com/problems/find-mode-in-binary-search-tree/editorial/?envType=daily-question&envId=2023-11-01) section for this problem, which is a very useful resource. Also you might want to learn terms like `BFS`, `DFS`, `Stack`, `Queue`, `LIFO`, `FIFO` etc. Also don't forget to checkout what's a `Binary Tree` is.
 
 The approach I have taken is a simple one:
 1. Creating a stack using a list with the tree elements
@@ -20,7 +20,7 @@ class Solution:
         counter = defaultdict(int) # creating the dictionary
         stack = [root] # creating the list with the tree element(s)
 
-        while stack: # iterate until stack is exhausted
+        while stack: # iterate until the stack is exhausted
             node = stack.pop() # take out the tree element
             counter[node.val] += 1 # count 
 
@@ -28,7 +28,7 @@ class Solution:
                 stack.append(node.left)
 
             if node.right: # check for the right item of the current node value
-                stack.appedn(node.right)
+                stack.append(node.right)
             
             max_freq = max(counter.values()) # get the maximum number 
             result = []

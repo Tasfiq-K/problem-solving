@@ -27,7 +27,7 @@ So, the calculation will look like this.
 3. Same goes for children node 1, the average is 1 + 0 / 1 = 1, the counter goes up again, and node count is now 2
 4. Now for the node value 8, Counting this as a node, our node count is 3, and average is 8 + 0 + 1 / 3 = 3, not equal to the node value. So, our node count is 3 and counter is 2
 
-[ This is the end of left side, and we store this values. Let's say total_left_node = 3, and total_average_count = 2 ]
+[ This is the end of left side, and we store these values. Let's say total_left_node = 3, and total_average_count = 2 ]
 
 [ Now for the right side, same approach]
 
@@ -50,7 +50,7 @@ class Solution:
                 return (0, 0)
 
             left_sum, left_count = count_sum(node.left) # recurring on the left side, this will execute until we reach the bottom of the left side
-            right_sum, right_count = count_sum(node.right) # ecurring on the left side, this will execute until we reach the bottom of the right side
+            right_sum, right_count = count_sum(node.right) # recurring on the left side, this will execute until we reach the bottom of the right side
 
             node_sum = node.val + left_sum + right_sum # calculating the sum for each node 
             node_count = left_count + right_count + 1 # counting the nodes

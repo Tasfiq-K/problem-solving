@@ -1,13 +1,13 @@
 ## The Problem
 **[Build an Array With Stack Operations](https://leetcode.com/problems/build-an-array-with-stack-operations/description/?envType=daily-question&envId=2023-11-03)**
 
-At a first glance, this might seem like difficult problem, and it's branded as a *medium* one, I don't why. But it isn't a problem of medium difficulty. If you know how to create a list and logically append something to it, you're good to go. 
+At a first glance, this might seem like a difficult problem, and it's branded as a *medium* one, I don't know why. But it isn't a problem of medium difficulty. If you know how to create a list and logically append something to it, you're good to go. 
 
-So, let's go over the problem, The problem says, you'll be given a list of numbers and an integer value. You'll need to output a list containing the two operations of a stack "push" and "pop". You will add the "push", "pop" considering the numbers in the given target list. Which means, if a number exists in the `target list` you add a **push** to your output list, and if a number doesn't then you add **pop** followed by a **push**. That's it. That is the problem. But the catch is here. When the item isn't present you add an extra **push** before you add **pop**. It seems easy now, doesn't it!! ok, let's see how to solve this.
+So, let's go over the problem, The problem says, you'll be given a list of numbers and an integer value. You'll need to output a list containing the two operations of a stack "push" and "pop". You will add the "push" or "pop" considering the numbers in the given target list. Which means, if a number exists in the `target list` you add a **push** to your output list, and if a number doesn't then you add **pop** followed by a **push**. That's it. That is the problem. But the catch is, When the item isn't present you add an extra **push** before you add **pop**. It seems easy now, doesn't it!! Ok, let's see how to solve this.
 
 ## The Approach
 
-The approach is pretty simple one. Let's go over it one by one--
+The approach is pretty simple one. Let's go over it step by step --
 
 1. So, you'll be given a target list in the format of [1, n]. 1 is the lower range, n is the upper. `n` will be provided. The target contains some integer number(s), which are strictly increasing up to `n` but could be less than `n`. So, the thing is you don't need to consider the `n` a bit. It's just there.
 2. Then you create your own range of values from `1` to the last value of the `target + 1`

@@ -59,7 +59,7 @@ This approach iterates over the given array using a for loop
 ## Optimal Appraoch
 
 ```python
-        if k > len(arr): # if number consecutive wins is greater than the length of the array, then return maximum number of the array as the answer. Well, give it a thought.
+        if k > len(arr): # if the number of consecutive wins is greater than the length of the array, return the maximum number of the array as the answer. Well, give it a thought.
             return max(arr)
 
         count = 0 # create the counter variable

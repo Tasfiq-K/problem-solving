@@ -11,3 +11,5 @@
 [`Day 4 - BLast Moment Before All Ants Fall Out of a Plank`](https://github.com/Tasfiq-K/leetcode-solving/tree/main/last-moment-before-all-ants-fall-out-of-a-plank)
 
 [`Day 5 - Find The Winner of An Array Game`](https://github.com/Tasfiq-K/leetcode-solving/tree/main/find-the-winner-of-an-array-game)
+
+[`Day 6 - Seat Reservation Manager`](https://github.com/Tasfiq-K/leetcode-solving/tree/main/seat-reservation-manager)

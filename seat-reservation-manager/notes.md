@@ -47,4 +47,4 @@ class SeatManager:
 
 ### Optimal Approach
 
-**Will add later, too lazy to do now** :yawn:
+**Will add later, too lazy to do now** 🥱

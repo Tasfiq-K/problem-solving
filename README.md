@@ -13,3 +13,5 @@
 [`Day 5 - Find The Winner of An Array Game`](https://github.com/Tasfiq-K/leetcode-solving/tree/main/find-the-winner-of-an-array-game)
 
 [`Day 6 - Seat Reservation Manager`](https://github.com/Tasfiq-K/leetcode-solving/tree/main/seat-reservation-manager)
+
+[`Day 7 - Eliminate Maximum Number of Monsters`](https://github.com/Tasfiq-K/leetcode-solving/tree/main/eliminate-maximum-number-of-monsters)

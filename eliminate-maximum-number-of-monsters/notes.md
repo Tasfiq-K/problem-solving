@@ -7,7 +7,7 @@ This problem is of medium difficulty. But at first look, this might look a prett
 The problem states that, You are playing a video game where you are defending your city from a group of `n` monsters. Now, you have a weapon which you use to defeat monsters. You will be given two `lists`, one contains the `distances` of each monster from the city, and other the `speed` of the each monsters. Both lists are of same lenght, and `distance[i]` monster has the speeed of `speed[i]`. The speeds for each monster are constant. Now, the weapon you have has its' own drawbacks. It takes a minute to charge before it can fire again. The task is to determine, how many monsters you have defeated before your city gets attacked. If your city gets attacked before you could defeat all the monsters, you loose and return the number of monsters you defeated as your answer. You also lose, if the moment you charged and a distance of monster from the city is 0. That's it. That's the problem. 
 
 But, there are some other things to note. 
-    * Initially, your weapon is fully charged, so, you kill the first monster without wasting your time. So, the counting down the time starts from the second monster.
+* Initially, your weapon is fully charged, so, you kill the first monster without wasting your time. So, the counting down the time starts from the second monster.
 
 ## The Approach
 

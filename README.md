@@ -15,3 +15,5 @@
 [`Day 6 - Seat Reservation Manager`](https://github.com/Tasfiq-K/leetcode-solving/tree/main/seat-reservation-manager)
 
 [`Day 7 - Eliminate Maximum Number of Monsters`](https://github.com/Tasfiq-K/leetcode-solving/tree/main/eliminate-maximum-number-of-monsters)
+
+[`Day 8 - Determine if a Cell Is Reachable at a Given Time`](https://github.com/Tasfiq-K/leetcode-solving/tree/main/determine-if-a-cell-is-reachable-at-a-given-time)

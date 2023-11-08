@@ -1,6 +1,5 @@
 ## The Problem
-**[Determine if a Cell Is Reachable at a Given Time
-](https://leetcode.com/problems/determine-if-a-cell-is-reachable-at-a-given-time/description/?envType=daily-question&envId=2023-11-08)**
+**[Determine if a Cell Is Reachable at a Given Time](https://leetcode.com/problems/determine-if-a-cell-is-reachable-at-a-given-time/description/?envType=daily-question&envId=2023-11-08)**
 
 The problem is quite straigtforward. In a given 2D grid system, you have to determine if you can reach `block B` from `Block A` at a certain given time `t`. You will be provided with the block coordinates and the time `t`
 

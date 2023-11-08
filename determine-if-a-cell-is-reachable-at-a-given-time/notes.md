@@ -8,7 +8,7 @@ The approach is also pretty straigtforward, but there are few edge cases, which 
 
 So, as the problem is related to calculation of distance, you might be tempted to use the Eucleadian distance formula, but that's actually won't work here. Because, the Eucleadian distance is for two points in a space. But here, it's not distance between points, rather distance between grid blocks. This calls for the `Chevyshev distance` also known as `chessboard` distance. Look them up, if you don't know how to calculate this distance between to grid blocks. 
 
-The `Chevyshev distance` is also quite straightforward, The equation is $$ max(|x_2 - x_1|, |y_2 -y_1|)$$
+The `Chevyshev distance` is also quite straightforward, The equation is $$max(|x_2 - x_1|, |y_2 -y_1|)$$
 
 Given, the Cartesian coordinates of the two blocks.
 

@@ -17,3 +17,5 @@
 [`Day 7 - Eliminate Maximum Number of Monsters`](https://github.com/Tasfiq-K/leetcode-solving/tree/main/eliminate-maximum-number-of-monsters)
 
 [`Day 8 - Determine if a Cell Is Reachable at a Given Time`](https://github.com/Tasfiq-K/leetcode-solving/tree/main/determine-if-a-cell-is-reachable-at-a-given-time)
+
+[`Day 9 - Count Number of Homogenous Substrings`](https://github.com/Tasfiq-K/leetcode-solving/tree/main/count-number-of-homogenous-substrings)

@@ -66,7 +66,7 @@ class Solution:
                 while changed_tail.next is not None:
                     changed_tail = changed_tail.next # [1002]
 
-                changed_tail.next = list1.next # [1002, next: [5]]
+                changed_tail.next = list1.next # [1002, next: [None]]
                 break
             
             list1 = list1.next
